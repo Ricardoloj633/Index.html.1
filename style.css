@@ -1,0 +1,35 @@
+:root{
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --accent:#2b8bd3;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#0f172a;
+  display:flex;
+  justify-content:center;
+  padding:32px;
+}
+main{
+  width:100%;
+  max-width:760px;
+}
+header{ text-align:center; margin-bottom:20px }
+#swapForm{
+  display:flex;
+  gap:8px;
+  margin-bottom:20px;
+}
+#swapForm input{flex:1;padding:10px;border:1px solid #e5e7eb;border-radius:6px}
+#swapForm button{background:var(--accent);color:white;border:none;padding:10px 16px;border-radius:6px;cursor:pointer}
+#swapList .card{background:var(--card);border:1px solid #e6edf3;padding:12px;border-radius:8px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.card .left{max-width:80%}
+.card h3{margin:0;font-size:16px}
+.card p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.card button{background:transparent;border:1px solid #f3f4f6;padding:6px 8px;border-radius:6px;cursor:pointer}
+.empty{color:var(--muted);text-align:center;padding:20px;background:transparent}
+@media(max-width:520px){#swapForm{flex-direction:column}#swapForm button{width:100%}}

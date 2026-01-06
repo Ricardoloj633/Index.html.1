@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwapZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SwapZone</h1>
+    <p>Intercambia lo que tienes por lo que necesitas</p>
+  </header>
+
+  <main>
+    <form id="swapForm">
+      <input type="text" id="item" placeholder="Objeto a intercambiar" required>
+      <input type="text" id="want" placeholder="¿Qué buscas a cambio?" required>
+      <button type="submit">Publicar</button>
+    </form>
+
+    <h2>Intercambios</h2>
+    <div id="swapList"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
